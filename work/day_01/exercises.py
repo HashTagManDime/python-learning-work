@@ -7,8 +7,9 @@ clients = [
 ]
 
 def protein_goal(weight, grams_per_lb):
+    raw = weight * grams_per_lb
     total_protein = weight * grams_per_lb
-    (min(350))
+    (min(raw, 350))
     return total_protein
 
 for name, weight, gpl in clients:
